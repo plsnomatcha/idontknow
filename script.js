@@ -1,16 +1,30 @@
 // LOADING SCREEN
 setTimeout(() => {
-  
-  document.getElementById("loadingScreen").style.display = "none";
-  
-  document.getElementById("mainScreen").style.display = "block";
-  
-  // LOAD FIRST CD
-  loadCD(currentCD);
-  
+
+  const loadingScreen = document.getElementById("loadingScreen");
+  const mainScreen = document.getElementById("mainScreen");
+
+  // FADE OUT
+  loadingScreen.style.opacity = "0";
+
+  setTimeout(() => {
+
+    loadingScreen.style.display = "none";
+
+    // SHOW MAIN
+    mainScreen.style.display = "block";
+
+    // FADE IN
+    setTimeout(() => {
+      mainScreen.style.opacity = "1";
+    }, 10);
+
+    // LOAD FIRST CD
+    loadCD(currentCD);
+
+  }, 500);
+
 }, 1500);
-
-
 
 // CAT REFERENCES
 const cat1 = document.getElementById("cat1");
@@ -148,3 +162,17 @@ discTape.addEventListener("click", (e) => {
   player.play();
   
 });
+
+// FIREBASE IMPORTS
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCI7gHJjT6AdES_H04jxk5U4McGnHyDH-k",
+  authDomain: "my-baby-b65ef.firebaseapp.com",
+  projectId: "my-baby-b65ef",
+  storageBucket: "my-baby-b65ef.firebasestorage.app",
+  messagingSenderId: "402919711371",
+  appId: "1:402919711371:web:5e4739cf88431eaacdea8e"
+};
+
+const app = initializeApp(firebaseConfig);
