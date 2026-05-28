@@ -20,7 +20,7 @@ body {
 }
 
 .screen {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -42,6 +42,7 @@ body {
 }
 
 #loadingGif {
+    position: fixed;
     width: 180px;
     pointer-events: none;
     user-select: none;
@@ -65,7 +66,7 @@ body {
 }
 
 .draggable {
-    position: absolute;
+    position: fixed;
     user-select: none;
     -webkit-user-drag: none;
     cursor: grab;
@@ -90,6 +91,7 @@ body {
 }
 
 #cat1 {
+    position: fixed;
     width: 390px;
     right: -40px;
     bottom: -50px;
@@ -100,6 +102,7 @@ body {
 }
 
 #cat2 {
+    position: fixed;
     width: 380px;
     right: 110px;
     top: 160px;
@@ -110,7 +113,7 @@ body {
 }   
 
 #tape {
-    position: absolute;
+    position: fixed;
     width: 325px;
     left: 35px;
     top: -100px;
@@ -119,7 +122,7 @@ body {
 }
 
 #disctape {
-    position: absolute;
+    position: fixed;
     width: 220px;
     left: 95px;
     top: -60px;
