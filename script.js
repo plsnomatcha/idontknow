@@ -29,8 +29,6 @@ setTimeout(() => {
 // CAT REFERENCES
 const cat1 = document.getElementById("cat1");
 
-const cat2 = document.getElementById("cat2");
-
 
 
 // CAT1 TOGGLE
@@ -53,30 +51,6 @@ cat1.addEventListener("click", () => {
   }
   
 });
-
-
-
-// CAT2 TOGGLE
-let cat2State = false;
-
-cat2.addEventListener("click", () => {
-  
-  if (!cat2State) {
-    
-    cat2.src = "catt2.png";
-    
-    cat2State = true;
-    
-  } else {
-    
-    cat2.src = "cat2.png";
-    
-    cat2State = false;
-    
-  }
-  
-});
-
 
 
 // MUSIC PLAYER
