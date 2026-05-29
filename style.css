@@ -92,7 +92,7 @@ body {
     position: fixed;
     width: 560px;
     right: -50px;
-    bottom: -150px;
+    bottom: -190px;
     z-index: 2;
 
     filter: drop-shadow(0 0 20px rgba(0,0,0,0.9));
